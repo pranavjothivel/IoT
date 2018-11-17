@@ -48,15 +48,8 @@
 	
 	<body>
 	    <h3>Print Message on LCD</h3>
-	            <!--<form action="https://api.particle.io/v1/devices/47004c001051373331333230/LCDPrint?access_token=8a23b62be57f056609e81a244648a257a284d043" method="POST">-->
-	            <!--    <input type="text" name="message"/>-->
-	            <!--    <input type="Submit" name="Submit"/>-->
-	                
-	                
-	            <!--</form>-->
-	            
-	            <input id="message" size="16"/>
-		        <input id="submit" type="button" value="Send Message" onclick="sendData()" /> 
+	        <input id="message" size="16"/>
+		    <input id="submit" type="button" value="Send Message" onclick="sendData()" onkeyup="inputKeyUp(event)"/> 
 	</body>
 	
 	
