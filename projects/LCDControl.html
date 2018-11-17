@@ -42,24 +42,12 @@
     
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-        
-        <script>
-            var input = document.getElementById("myInput");
-            input.addEventListener("keyup", function(event) {
-                event.preventDefault();
-                if (event.keyCode === 13) {
-                    document.getElementById("myBtn").click();
-                }
-            });
-        </script>
-    
     </head>
 	
 	<body>
 	    <h3>Print Message on LCD</h3>
 	        <input id="message" size="16"/>
-		    <!--<input type="button" value="Send Message" onclick="sendData()"/> -->
-		    <input id="sendMessage" type="button" value="Send Message" onclick="sendData()"/> 
+		    <input type="button" value="Send Message" onclick="sendData()"/> 
 	</body>
 	
 	
