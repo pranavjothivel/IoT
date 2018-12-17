@@ -44,10 +44,12 @@
         
     </head>
 	
-	<body>
+	<body onload="statusRetriever()">
 	    <h2>Alarm Status:</h2>
 	    <input type="radio" name="arm" value="arm" onclick="toggleArm()"/> Arm System
 	    <input type="radio" name="arm" value="disarm" onclick="toggleDisarm()"/> Disarm System
+	    
+	    <p>System Status: </p><span style="font-weight:bold" id="status"></span>
 	</body>
 	
 	
