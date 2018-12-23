@@ -45,17 +45,21 @@
     </head>
 	
 	<body>
-	    <h3>Humidifier Control</h3>
+	    <h2>Humidifier Control</h2>
 	    
 	    <b>Status:</b>
-	    <input type="radio" value="on" onclick="toggleOn()"/> On
-	    <input type="radio" value="off" onclick="toggleOff()"/> Off
+	    <input type="radio" name="status" value="on" onclick="toggleOn()"/> On
+	    <input type="radio" name="status" value="off" onclick="toggleOff()"/> Off
 	    
-	    <p style="font-weight:bold">Current Status:</p><span id="CurrentStatus"></span>
+	    <p style="font-weight:bold">Current Status: </p><span id="CurrentStatus"></span>
 	    
 	    <b>Humidity Run Point for Humidifier: </b>
 	    <input id="RunPointValue" size="8"/>
 	    <input type="button" value="Send" onclick="sendRunPoint()" />
+	    <p style="font-weight:bold">Current Run Point: </p><span id="SetRunPoint"></span>
+	    <!--<br>-->
+	    <p style="font-weight:bold">Current Humidity: </p><span id="CurrentHumidity"></span>
+	    
 	    
 	</body>
 	
