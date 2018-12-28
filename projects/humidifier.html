@@ -48,20 +48,32 @@
 	<body>
 	    <h2>Humidifier Control</h2>
 	    
-	    <b>Status:</b>
-	    <input type="radio" name="status" value="on" onclick="toggleOn()"/> On
-	    <input type="radio" name="status" value="off" onclick="toggleOff()"/> Off
+    	    <div id="ControlStatus">
+        	    <b>Status:</b>
+        	    <input type="radio" name="status" value="on" onclick="toggleOn()"/> On
+        	    <input type="radio" name="status" value="off" onclick="toggleOff()"/> Off
+        	</div>
 	    
-	    <p style="font-weight:bold">Current Status: </p><span id="CurrentStatus"></span>
-	    
-	    <p style="font-weight:bold">Humidity Run Point for Humidifier: </p>
-	    <input id="RunPointValue" size="8"/>
-	    <input type="button" value="Send" onclick="sendRunPoint()" />
-	    <p style="font-weight:bold">Current Run Point: </p><span id="SetRunPoint"></span>
-	    <!--<br>-->
-	    <p style="font-weight:bold">Current Humidity: </p><span id="CurrentHumidity"></span>
-	    
-	    
+    	    <div id="CurrentStatus">
+    	        <p style="font-weight:bold">Current Status: </p><span id="CurrentStatus"></span>
+    	    </div>
+    	    
+    	    <div id="ChangeRunPoint">
+        	    <p style="font-weight:bold">Humidity Run Point for Humidifier: </p>
+        	    <input id="RunPointValue" size="8"/>
+    	        <input type="button" value="Send" onclick="sendRunPoint()" />
+    	    </div>
+    	    
+    	    <div id="PresentRunPoint">
+        	    <p style="font-weight:bold">Current Run Point: </p><span id="SetRunPoint"></span>
+        	</div>
+        	
+        	<div id="PresentHumidity">
+         	    <!--<br>-->
+        	    <p style="font-weight:bold">Current Humidity: </p><span id="CurrentHumidity"></span>       	    
+        	</div>
+        	    
+    	    
 	</body>
 	
 	
